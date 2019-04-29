@@ -4,8 +4,7 @@ class TodoController {
 
     static async findAllByUser(req, res) {
         try {
-            let all = await Todo.findAll(
-                {where : {UserId : req.authenticatedUser.id}})
+            let all = await Todo.findAll({where : {UserId : req.authenticatedUser.id}})
             res.status(200).json(all)
         } catch (error) {
             console.log(error);
@@ -52,8 +51,6 @@ class TodoController {
     }
 
     static async updateFewField(req,res) {
-        console.log('keupdatedan ga');
-        
         try {
             let found = await Todo.findByPk(req.params.id)
             let updated = await found.update(req.body)
