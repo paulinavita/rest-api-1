@@ -14,10 +14,10 @@
     "dialect": "postgres"
   },
   "production": {
-    "username": "postgres",
-    "password": 2606,
-    "database": "rest_api_production",
-    "host": "127.0.0.1",
+    "username": "ycuqkgqttbgyyg",
+    "password": "c60d22ee54bedecee468a5181f23fe18ad7f623b552f4c750af9120b08aeb058",
+    "database": "d9k96vq92pvvtq",
+    "host": "ec2-50-19-127-115.compute-1.amazonaws.com",
     "dialect": "postgres"
   }
 }
