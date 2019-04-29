@@ -6,6 +6,7 @@ module.exports = (sequelize, DataTypes) => {
     UserId: DataTypes.INTEGER
   }, {});
   Todo.associate = function(models) {
+    Todo.hasOne(models.User)
     // associations can be defined here
   };
   return Todo;
